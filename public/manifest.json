@@ -1,0 +1,17 @@
+{
+  "name": "Tweetlify",
+  "description": "My first tweetlify extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "webRequest"
+  ],
+  "host_permissions": [
+    "*://*.twitter.com/"
+  ],
+  "background": { "service_worker": "hot-reload.js" }
+}
